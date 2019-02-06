@@ -1,0 +1,22 @@
+{
+  "name": "krissteinort.com",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krissteinort/krissteinort.github.io.git"
+  },
+  "author": "Kris Steinort",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krissteinort/krissteinort.github.io/issues"
+  },
+  "homepage": "https://github.com/krissteinort/krissteinort.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
