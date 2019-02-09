@@ -56,8 +56,40 @@
       width: 250px;
       height: 250px;
       background: url("../img/portrait.jpg");
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px #eece1a; }
+  .menu .nav-item {
+    transform: translate3d(600px, 0, 0);
+    transition: all 0.8s ease-in-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .nav-item.current > a {
+      color: #eece1a; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.8s ease-in-out; }
+    .menu .nav-link:hover {
+      color: #eece1a; }
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.05s; }
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.1s; }
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.15s; }
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.2s; }
 
 * {
   box-sizing: border-box; }
@@ -95,7 +127,7 @@ h3 {
   h2.small-heading,
   h3.small-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem;
+    padding: 0.2rem 1rem;
     background: rgba(74, 74, 74, 0.5); }
 
 a {
@@ -112,7 +144,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -123,4 +155,4 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin: 20vh; }
+      margin-top: 20vh; }
