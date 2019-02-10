@@ -126,10 +126,8 @@ h3 {
   h1.small-heading,
   h2.small-heading,
   h3.small-heading {
-    margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(74, 74, 74, 0.5);
-    width: 35vw;
     display: inline; }
 
 a {
@@ -200,6 +198,28 @@ main {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.8s ease-in-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: #ffffff solid 3px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.8s ease-in-out; }
+    .boxes div:hover {
+      background: #eece1a;
+      color: #000000;
+      padding: 0.5rem 1.5rem; }
+      .boxes div:hover span {
+        color: #000000; }
+    .boxes div i:hover {
+      color: #000000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
