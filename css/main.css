@@ -254,6 +254,10 @@ main {
   color: #ffffff;
   height: 60px; }
 
+label, input, textarea {
+  display: block
+}
+
 @media screen and (max-width: 768px) {
   main {
     align-items: center;

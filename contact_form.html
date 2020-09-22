@@ -16,7 +16,7 @@
     <title>Contact Me</title>
   </head>
   <div class="overlay"></div>
-
+  
   <body>
     <header>
       <div class="menu-btn">
@@ -52,42 +52,37 @@
         </ul>
       </nav>
     </header>
-
     <main id="contact">
+
       <h1 class="large-heading">
         Contact <span class="text-secondary"> Me </span>
       </h1>
-      <h2 class="small-heading">
-        I'd love to hear from you or meet up to talk about travel, tech,
-        history, or whatever else comes to your mind...
-      </h2>
-      <div class="boxes">
-        <div>
-          <a href="contact_form.html"> <span class="text-secondary">Email:</span> kbsteinort@gmail.com</a>
+      <form action="https://formspree.io/mjvpvoob" method="POST">
+        <label>
+          Email
+          <input type="email" class="email" name="_replyto" required/>
+        </label>
+        <label>
+          Subject
+          <input type="text" class="subject" name="subject" required/>
+        </label>
+        <label>
+          Message
+          <textarea class="message" name="message" rows="5" cols="70" maxlength="2000" required></textarea>
+        </label>
+        <div class="status">
+
         </div>
-        <div><span class="text-secondary">Phone:</span> (207) 730-9970</div>
-        <div>
-          <a href="https://github.com/krissteinort" target="_blank">
-            <i class="fab fa-github fa-3x"> </i>
-          </a>
-          <a href="https://twitter.com/krissteinort" target="_blank">
-            <i class="fab fa-twitter fa-3x"> </i>
-          </a>
-          <a href="https://www.facebook.com/kris.steinort" target="_blank">
-            <i class="fab fa-facebook fa-3x"> </i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/kristopher-steinort-9a332588/"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin fa-3x"> </i>
-          </a>
-        </div>
-      </div>
-    </main>
+        <button type="submit" class="submit">
+          Send
+        </button>
+      </form>
     <footer id="main-footer">
       Copyright &copy; 2020
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
+
+
 </html>

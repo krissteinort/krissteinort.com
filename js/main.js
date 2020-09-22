@@ -33,3 +33,37 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+$(document).ready(function (){
+  $(".submit").click(function(event) {
+
+    
+    const email = $(".email").val()
+    const subject = $(".subject").val()
+    const message = $(".message").val()
+    const statusElm = $(".status")
+    statusElm.empty()
+
+    if(email.length > 5 && email.includes("@") && email.includes(".")) {
+      statusElm.append("<div>Valid email</div>")
+    } else {
+      event.preventDefault()
+      statusElm.append("<div>Invalid email</div>")
+    }
+
+    if(subject.length >= 2) {
+      statusElm.append("<div>Valid subject</div>")
+    } else {
+      event.preventDefault()
+      statusElm.append("<div>Invalid subject</div>")
+    }
+
+    if(message.length > 15) {
+      statusElm.append("<div>Valid message</div>")
+    } else {
+      event.preventDefault()
+      statusElm.append("<div>Invalid message</div>")
+    }
+
+  })
+})
